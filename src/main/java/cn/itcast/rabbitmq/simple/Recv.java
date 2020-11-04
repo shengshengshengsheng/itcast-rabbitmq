@@ -12,6 +12,7 @@ import cn.itcast.rabbitmq.util.ConnectionUtil;
 
 /**
  * 消费者
+ * @author xuqiangsheng
  */
 public class Recv {
     private final static String QUEUE_NAME = "simple_queue";
@@ -35,6 +36,7 @@ public class Recv {
             }
         };
         // 监听队列，第二个参数：是否自动进行消息确认。
+        //如果第二个参数为true，则会自动进行ACK；如果为false，则需要手动ACK
         channel.basicConsume(QUEUE_NAME, true, consumer);
     }
 }

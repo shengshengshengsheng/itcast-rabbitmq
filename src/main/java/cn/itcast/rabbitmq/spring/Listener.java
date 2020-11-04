@@ -7,6 +7,9 @@ import org.springframework.amqp.rabbit.annotation.QueueBinding;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author xuqiangsheng
+ */
 @Component
 public class Listener {
 
